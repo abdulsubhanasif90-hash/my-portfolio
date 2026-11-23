@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    color: #222;
+}
+
+header {
+    background: #172554;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.home {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: white;
+}
+
+.home h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.home span {
+    color: #93c5fd;
+}
+
+.home p {
+    margin: 20px 0;
+}
+
+.btn {
+    background: white;
+    color: #172554;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section h2 {
+    color: #172554;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+#about p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.skills-container,
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-container div,
+.project-card,
+.education-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000012;
+}
+
+.skills-container div {
+    color: #2563eb;
+    font-weight: bold;
+    min-width: 130px;
+}
+
+.project-card {
+    width: 220px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.education-card {
+    max-width: 450px;
+    margin: auto;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #172554;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+}
